@@ -1,33 +1,14 @@
-/* FONTS */
+body {
+    background-color: #f5f4f8;
+    color: #5c5776;
+}
+
 @font-face {
     font-family: Feather;
     font-style: normal;
     font-weight: 400;
     src: url(../assets/fonts/feather.ttf) format("truetype");
 }
-
-/* RESETS */
-
-body {
-    font-family: "Inter", sans-serif;
-    background-color: #f5f4f8;
-    color: #5c5776;
-}
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #18113c;
-    font-family: Inter, "sans-serif";
-    font-weight: 500 !important;
-    line-height: 1.4;
-    margin-bottom: 0.5rem;
-    margin-top: 0;
-} */
-
 
 #user img {
     border-radius: 50%;
@@ -91,30 +72,6 @@ ion-icon.icone {
     }
 }
 
-
-/* ion-icon.freccia-s {
-    font-size: 1.5em;
-    background-color: white;
-    border: 0.5px solid lightgrey;
-    border-radius: 50%;
-    padding: 10px;
-    margin-right: 20px;
-    color: grey;
-}
-
-ion-icon.freccia-d {
-    font-size: 1.5em;
-    background-color: white;
-    border: 0.5px solid lightgrey;
-    border-radius: 50%;
-    padding: 10px;
-    margin-left: 20px;
-    color: grey;
-} */
-
-/* fine frecce */
-
-/* section recommended */
 
 section.recommended {
     padding: 3.5rem 0;
