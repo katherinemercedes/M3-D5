@@ -1,0 +1,168 @@
+/* FONTS */
+@font-face {
+    font-family: Feather;
+    font-style: normal;
+    font-weight: 400;
+    src: url(../assets/fonts/feather.ttf) format("truetype");
+}
+
+/* RESETS */
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f5f4f8;
+    color: #5c5776;
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #18113c;
+    font-family: Inter, "sans-serif";
+    font-weight: 500 !important;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+} */
+
+
+#user img {
+    border-radius: 50%;
+    width: 45px;
+    height: auto;
+}
+
+#bell {
+    font-size: 1.3em;
+    padding: 13px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+div.custom-bg {
+    background-color: #6f57f5 !important;
+}
+
+button.custom-color {
+    background-color: #5fc89b !important;
+}
+
+ion-icon.icone {
+    font-size: 1.4em;
+    background-color: #fceedc;
+    border-radius: 50%;
+    padding: 15px;
+    color: #b07200;
+}
+
+/* frecce */
+
+.freccia-s,
+.freccia-d {
+    font-size: 1.5em;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    color: grey;
+}
+
+
+.freccia-s {
+    left: -70px !important;
+}
+
+.freccia-d {
+    right: -70px !important;
+}
+
+@media (min-width: 992px) {
+    .freccia-s {
+        left: -40px;
+    }
+
+    .freccia-d {
+        right: -40px;
+    }
+}
+
+
+/* ion-icon.freccia-s {
+    font-size: 1.5em;
+    background-color: white;
+    border: 0.5px solid lightgrey;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 20px;
+    color: grey;
+}
+
+ion-icon.freccia-d {
+    font-size: 1.5em;
+    background-color: white;
+    border: 0.5px solid lightgrey;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 20px;
+    color: grey;
+} */
+
+/* fine frecce */
+
+/* section recommended */
+
+section.recommended {
+    padding: 3.5rem 0;
+}
+
+section.recommended h2 {
+    font-size: 1.5rem;
+}
+
+section.recommended h2+.card-carousel-container {
+    gap: 20px 0;
+}
+
+section.recommended .card .card-title {
+    display: -webkit-box;
+    -webkit-box-direction: vertical;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+
+section.recommended .stars {
+    color: rgb(255, 170, 70);
+    gap: 2px;
+    font-size: .9em;
+}
+
+section.recommended .stars+span {
+    font-size: 0.75rem;
+}
+
+section.recommended .price>span {
+    color: rgb(24, 17, 60);
+    font-weight: 600;
+}
+
+section.recommended .card .card-footer span {
+    display: inline-block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* mouseover card shadow */
+
+div.card:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 10px rgb(224, 224, 224);
+    transition: 0.7s;
+}
