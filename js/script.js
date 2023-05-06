@@ -5,12 +5,12 @@ let saveIcons = document.getElementsByClassName("sv-custom");
 
     for(icon of saveIcons){
         icon.addEventListener("mouseover", (event)=>{
-            event.target.name="bookmark";
+            event.target.src="/assets/bookmark.svg";
         });
     }
 
     for(icon of saveIcons){
         icon.addEventListener("mouseleave", (event)=>{
-            event.target.name="bookmark-outline";
+            event.target.src="/assets/bookmark-outline.svg";
         });
     }
