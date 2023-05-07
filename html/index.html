@@ -21,11 +21,33 @@
             <a class="navbar-brand" href="#">
                 <img src="../assets/logo.svg" alt="logo" width="40px">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="d-flex d-lg-none">
+                <div class="d-flex" role="search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" id="notification"
+                        viewBox="0 0 512 512">
+                        <path
+                            d="M427.68,351.43C402,320,383.87,304,383.87,217.35,383.87,138,343.35,109.73,310,96c-4.43-1.82-8.6-6-9.95-10.55C294.2,65.54,277.8,48,256,48S217.79,65.55,212,85.47c-1.35,4.6-5.52,8.71-9.95,10.53-33.39,13.75-73.87,41.92-73.87,121.35C128.13,304,110,320,84.32,351.43,73.68,364.45,83,384,101.61,384H410.49C429,384,438.26,364.39,427.68,351.43Z"
+                            style="fill:none;stroke:grey;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px;" />
+                        <path d="M320,384v16a64,64,0,0,1-128,0V384"
+                            style="fill:none;stroke:grey;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                    </svg>
+                    <div id="user" class="me-2">
+                        <img src="../assets/avatar-1.jpg" alt="user one">
+
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+
+
+
+
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
@@ -89,7 +111,7 @@
                     </li>
 
                 </ul>
-                <div class="d-flex" role="search">
+                <div class="d-md-flex d-none" role="search">
                     <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" id="notification"
                         viewBox="0 0 512 512">
                         <path
@@ -99,24 +121,7 @@
                             style="fill:none;stroke:grey;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
                     </svg>
                     <div id="user">
-
-                        <li class="nav-item dropstart">
-                            <a class="nav-link dropdown-toggle link-dark" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="../assets/avatar-1.jpg" alt="user one">
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-
-
-
+                        <img src="../assets/avatar-1.jpg" alt="user one">
 
                     </div>
                 </div>
@@ -129,21 +134,20 @@
     <div class="jumbotron jumbotron-fluid bg-info custom-bg">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center ">
-                    <h3 class="display-4 fw-bold text-light">Welcome Web Students!</h3>
-                    <p class="lead text-light fw-300"> Hand-picked instuctor and experty crafted <br> courses, designed
-                        for
-                        the modern
-                        students and <br> entrepreneur.</p>
+                <div class="col-lg-6 d-flex flex-column align-items-start justify-content-center my-4">
+                    <h1 class="fw-bold text-light">Welcome Web Students!</h1>
+                    <p class="text-light fw-300"> Hand-picked instuctor and experty crafted <br> courses, designed
+                        for the modern students and <br> entrepreneur.</p>
                     <div>
 
-                        <button class="bg-success p-2 rounded-2 text-light border-0 py-3 px-4 custom-color">Browse
+                        <button
+                            class="bg-success p-2 rounded-2 text-white fw-bold border-0 py-3 px-4 custom-color">Browse
                             Courses</button>
-                        <button class="p-2 rounded-2 border-0 py-3 px-4">Are You Instructor?</button>
+                        <button class="p-2 rounded-2 border-0 py-3 px-4 bg-white fw-bold">Are You Instructor?</button>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img class="ms-0" src="../assets/hero-img.png" alt="hero" id="hero">
+                    <img class="ms-0 w-100" src="../assets/hero-img.png" alt="hero" id="hero">
                 </div>
             </div>
 
@@ -154,10 +158,10 @@
 
     <!-- SECTION ONE -->
 
-    <div class="shadow bg-light">
+    <div class="shadow bg-light" id="qualities">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center my-4">
+                <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-left my-lg-4 mt-4">
                     <!-- videocam outline -->
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="s1-icons">
                         <path
@@ -170,12 +174,12 @@
 
                     <div class="d-flex flex-column align-items-start justify-content-center">
                         <h5 class="m-0 text-dark">30,000 online courses</h5>
-                        <p class="m-0">Enjoy a variety of fresh topics</p>
+                        <p class="m-0 fw-lighter">Enjoy a variety of fresh topics</p>
                     </div>
                 </div>
 
 
-                <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center my-4">
+                <div class="col-lg-4 col-sm-12 d-flex align-items-center my-lg-4 mt-4">
                     <!-- people-outline -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="s1-icons" viewBox="0 0 512 512">
                         <path
@@ -194,11 +198,11 @@
 
                     <div class="d-flex flex-column align-items-start justify-content-center">
                         <h5 class="m-0 text-dark">Expert instruction</h5>
-                        <p class="m-0">Find the right instructor for you</p>
+                        <p class="m-0 fw-lighter">Find the right instructor for you</p>
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center my-4">
+                <div class="col-lg-4 col-sm-12 d-flex my-lg-4 my-4">
                     <!-- time-outline-icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="s1-icons" viewBox="0 0 512 512">
                         <path d="M256,64C150,64,64,150,64,256s86,192,192,192,192-86,192-192S362,64,256,64Z"
@@ -207,9 +211,9 @@
                             style="fill:none;stroke:#b07200;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
                     </svg>
 
-                    <div class="d-flex flex-column align-items-start justify-content-center">
+                    <div class="d-flex flex-column align-items-start">
                         <h5 class="m-0 text-dark">Lifetime access</h5>
-                        <p class="m-0">Learn on your schedule</p>
+                        <p class="m-0 fw-lighter">Learn on your schedule</p>
                     </div>
                 </div>
             </div>
@@ -218,10 +222,10 @@
 
     <!-- END OF SECTION 1 -->
 
-    <section class="recommended mt-5" aria-label="courses">
+    <section class="recommended mt-lg-5 mt-2" aria-label="courses">
 
 
-        <div class="container px-5 px-xl-3">
+        <div class="container px-lg-5 px-4 px-xl-3">
             <h2 class="pb-3 text-dark">Recommended to you</h2>
 
             <div class="card-carousel-container d-flex justify-content-between position-relative">
@@ -248,12 +252,12 @@
 
                 <div class="row">
                     <!-- first card -->
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-6 p-2">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-graphql.jpg" class="card-img-top" alt="graphql image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
-                                <div class="d-flex flex-wrap">
+                                <div class="d-flex flex-wrap align-items-center">
                                     <div class="mr-2">
                                         <ion-icon name="time-outline"></ion-icon>
                                         <span class="font-sm">2h 40m</span>
@@ -265,7 +269,7 @@
                                         <span class="font-sm">Advance</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -308,7 +312,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-5.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">Brooklyn Simmons</span>
@@ -324,10 +328,10 @@
                     </div>
 
                     <!-- second card -->
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-6 p-2">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-javascript.jpg" class="card-img-top" alt="javascript image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">A Complete Beginner’s Guide to JavaScript</h5>
                                 <div class="d-flex flex-wrap">
                                     <div class="mr-2">
@@ -341,7 +345,7 @@
                                         <span class="font-sm">Advance</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -383,7 +387,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-1.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">Jenny Wilson</span>
@@ -398,10 +402,10 @@
                     </div>
 
                     <!-- third card -->
-                    <div class="col-lg-3 col-md-4 col-6 d-md-block d-none">
+                    <div class="col-lg-3 col-md-4 col-6 d-md-block p-2 d-none">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-node.jpg" class="card-img-top" alt="node image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
                                 <div class="d-flex flex-wrap">
                                     <div class="mr-2">
@@ -415,7 +419,7 @@
                                         <span class="font-sm">Intermediate</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -455,7 +459,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-3.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">Sina Ray</span>
@@ -470,10 +474,10 @@
                     </div>
 
                     <!-- fourth card -->
-                    <div class="col-lg-3 col-md-4 col-6 d-lg-block d-md-none d-none">
+                    <div class="col-lg-3 col-md-4 col-6 d-lg-block d-md-none d-none p-2">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-laravel.jpg" class="card-img-top" alt="laravel image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">Laravel: The Ultimate Beginner’s Guide to Learn Laravel Step by
                                     Step
                                 </h5>
@@ -489,7 +493,7 @@
                                         <span class="font-sm">Beginner</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -530,7 +534,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-7.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">Sobo Rikhan</span>
@@ -556,10 +560,10 @@
     <!-- end of recommended section -->
 
 
-    <section class="recommended" aria-label="courses">
+    <section class="recommended p-0 mt-lg-5 mt-2" aria-label="courses">
 
 
-        <div class="container px-5 px-xl-3">
+        <div class="container px-lg-5 px-4 px-xl-3">
             <h2 class="pb-3 text-dark">Most Popular</h2>
 
             <div class="card-carousel-container d-flex justify-content-between position-relative">
@@ -586,10 +590,10 @@
 
                 <div class="row">
                     <!-- first card -->
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-6 p-2">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-html.jpg" class="card-img-top" alt="graphql image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">HTML Full Course - Build a Website Tutorial</h5>
                                 <div class="d-flex flex-wrap">
                                     <div class="mr-2">
@@ -603,7 +607,7 @@
                                         <span class="font-sm">Advance</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -645,7 +649,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-8.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">Miston Wilson</span>
@@ -661,10 +665,10 @@
                     </div>
 
                     <!-- second card -->
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-6 p-2">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-javascript.jpg" class="card-img-top" alt="javascript image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">A Complete Beginner’s Guide to JavaScript</h5>
                                 <div class="d-flex flex-wrap">
                                     <div class="mr-2">
@@ -678,7 +682,7 @@
                                         <span class="font-sm">Advance</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -720,7 +724,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-1.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">Jenny Wilson</span>
@@ -736,10 +740,10 @@
                     </div>
 
                     <!-- third card -->
-                    <div class="col-lg-3 col-md-4 col-6 d-md-block d-none">
+                    <div class="col-lg-3 col-md-4 col-6 d-md-block p-2 d-none">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-node.jpg" class="card-img-top" alt="node image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
                                 <div class="d-flex flex-wrap">
                                     <div class="mr-2">
@@ -753,7 +757,7 @@
                                         <span class="font-sm">Intermediate</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -795,7 +799,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-3.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">Sina Ray</span>
@@ -811,10 +815,10 @@
                     </div>
 
                     <!-- fourth card -->
-                    <div class="col-lg-3 col-md-4 col-6 d-lg-block d-md-none d-none">
+                    <div class="col-lg-3 col-md-4 col-6 d-lg-block d-md-none d-none p-2">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-react.jpg" class="card-img-top" alt="react image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">How to easily create a website with React</h5>
                                 <div class="d-flex flex-wrap">
                                     <div class="mr-2">
@@ -828,7 +832,7 @@
                                         <span class="font-sm">Beginner</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -870,7 +874,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-2.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">April Noms</span>
@@ -896,10 +900,10 @@
 
     <!-- Trending -->
 
-    <section class="recommended" aria-label="courses">
+    <section class="recommended mt-lg-5 mt-2" aria-label="courses">
 
 
-        <div class="container px-5 px-xl-3">
+        <div class="container px-lg-5 px-4 px-xl-3">
             <h2 class="pb-3 text-dark">Trending</h2>
 
             <div class="card-carousel-container d-flex justify-content-between position-relative">
@@ -926,10 +930,10 @@
 
                 <div class="row">
                     <!-- first card -->
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-6 p-2">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-gatsby.jpg" class="card-img-top" alt="gatsby image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">HTML Full Course - Build a Website Tutorial</h5>
                                 <div class="d-flex flex-wrap">
                                     <div class="mr-2">
@@ -943,7 +947,7 @@
                                         <span class="font-sm">Advance</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -985,7 +989,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-5.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">Brooklyn Simmons</span>
@@ -1001,10 +1005,10 @@
                     </div>
 
                     <!-- second card -->
-                    <div class="col-lg-3 col-md-4 col-6">
+                    <div class="col-lg-3 col-md-4 col-6 p-2">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-html.jpg" class="card-img-top" alt="html5 image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">A Complete Beginner’s Guide to JavaScript</h5>
                                 <div class="d-flex flex-wrap">
                                     <div class="mr-2">
@@ -1018,7 +1022,7 @@
                                         <span class="font-sm">Advance</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -1060,7 +1064,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-1.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">Jenny Wilson</span>
@@ -1076,10 +1080,10 @@
                     </div>
 
                     <!-- third card -->
-                    <div class="col-lg-3 col-md-4 col-6 d-md-block d-none">
+                    <div class="col-lg-3 col-md-4 col-6 d-md-block d-none p-2">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-node.jpg" class="card-img-top" alt="node image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">GraphQL: introduction to graphQL for beginners</h5>
                                 <div class="d-flex flex-wrap">
                                     <div class="mr-2">
@@ -1093,7 +1097,7 @@
                                         <span class="font-sm">Intermediate</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -1135,7 +1139,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-3.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">Sina Ray</span>
@@ -1151,10 +1155,10 @@
                     </div>
 
                     <!-- fourth card -->
-                    <div class="col-lg-3 col-md-4 col-6 d-lg-block d-md-none d-none">
+                    <div class="col-lg-3 col-md-4 col-6 d-lg-block d-md-none d-none p-2">
                         <div class="card border-0 rounded-lg">
                             <img src="../assets/course-laravel.jpg" class="card-img-top" alt="react image">
-                            <div class="card-body">
+                            <div class="card-body p-md-4 p-4">
                                 <h5 class="card-title">How to easily create a website with React</h5>
                                 <div class="d-flex flex-wrap">
                                     <div class="mr-2">
@@ -1168,7 +1172,7 @@
                                         <span class="font-sm">Beginner</span>
                                     </div>
                                 </div>
-                                <div class="d-flex align-items-end flex-wrap my-3">
+                                <div class="d-flex align-items-end flex-wrap my-lg-3 my-2">
                                     <div class="d-flex align-items-center stars font-sm mr-2">
                                         <!--SVG  EVALUATION STARS -->
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -1210,7 +1214,7 @@
                                 </div>
                             </div>
                             <div class="card-footer bg-white d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-around">
+                                <div class="d-flex justify-content-around align-items-center">
                                     <img src="../assets/avatar-7.jpg" class="rounded-circle me-2" alt="avatar image 5"
                                         width="30" height="30">
                                     <span class="font-sm">Sobo Rikhan</span>
@@ -1238,15 +1242,15 @@
     <!-- end of carousel section -->
 
     <!-- FOOTER -->
-    <footer class="container">
+    <footer class="container fw-lighter">
         <hr>
-        <div class="d-flex justify-content-between align-items-center">
-            <p class="d-inline-block">@2022 Geeks. All Rights Reserved.</p>
-            <ul class="d-flex list-unstyled">
-                <li class="btn text-secondary">Privacy</li>
-                <li class="btn text-secondary">Terms</li>
-                <li class="btn text-secondary">Feedback</li>
-                <li class="btn text-secondary">Support</li>
+        <div class="d-md-flex justify-content-md-between align-items-center mb-md-3">
+            <p class="d-flex justify-content-center mb-0">@2022 Geeks. All Rights Reserved.</p>
+            <ul class="d-flex list-unstyled justify-content-center mb-1 fw-lighter">
+                <li class="btn text-secondary fw-lighter">Privacy</li>
+                <li class="btn text-secondary fw-lighter">Terms</li>
+                <li class="btn text-secondary fw-lighter">Feedback</li>
+                <li class="btn text-secondary fw-lighter">Support</li>
             </ul>
         </div>
     </footer>
