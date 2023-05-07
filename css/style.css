@@ -158,7 +158,7 @@ hr {
 
 
 /* MOBILE SETTINGS */
-@media screen and (max-width:768px) {
+@media screen and (min-width:500px) and (max-width:768px) {
 
     footer {
         font-size: 0.85em;
@@ -240,15 +240,29 @@ hr {
 
 }
 
-@media screen and (max-width:400px) {
 
+@media screen and (min-width:992px) and (max-width:1199px) {
+    div.jumbotron>.container>.row>div h1 {
+        font-size: 2.4em !important;
+    }
+}
+
+
+
+
+
+@media screen and (min-width:300px) and (max-width:500px) {
+
+    div.jumbotron>.container>.row>div {
+        padding-left: 25px !important;
+    }
 
     div.jumbotron>.container>.row>div h1 {
-        font-size: 1.7em !important;
+        font-size: 2em !important;
     }
 
     div.jumbotron>.container>.row>div p {
-        font-size: 0.9em !important;
+        font-size: 1em !important;
 
     }
 
@@ -293,5 +307,20 @@ hr {
         right: -22px !important;
         padding: 8px;
         z-index: 3;
+    }
+
+    #qualities .row>div>div h5 {
+        font-size: 1em !important;
+    }
+
+    #qualities .row>div>div p {
+        font-size: .8em !important;
+    }
+
+    svg.s1-icons {
+        width: 45px;
+        height: 45px;
+        padding: 13px;
+        margin-left: 10px;
     }
 }
