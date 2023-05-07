@@ -258,11 +258,11 @@ hr {
     }
 
     div.jumbotron>.container>.row>div h1 {
-        font-size: 2em !important;
+        font-size: 1.4em !important;
     }
 
     div.jumbotron>.container>.row>div p {
-        font-size: 1em !important;
+        font-size: 0.7em !important;
 
     }
 
