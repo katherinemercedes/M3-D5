@@ -26,6 +26,11 @@ section.recommended .stars {
     fill: rgb(255, 170, 70);
     gap: 2px;
     font-size: .9em;
+    margin-right: 5px
+}
+
+section.recommended .my-lg-3 span {
+    font-size: 0.8em !important;
 }
 
 /* icone section one */
@@ -124,7 +129,9 @@ section.recommended .card .card-title {
     overflow: hidden;
 }
 
-
+section.recommended .card h5 {
+    font-size: 1.2em !important;
+}
 
 
 section.recommended .stars+span {
@@ -238,12 +245,27 @@ hr {
         width: 20px !important;
     }
 
+
+    /* icone nelle card */
+
+    div.card-body div.mr-2>svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    section.recommended .card h5 {
+        font-size: 1em !important;
+    }
 }
 
 
 @media screen and (min-width:992px) and (max-width:1199px) {
     div.jumbotron>.container>.row>div h1 {
         font-size: 2.4em !important;
+    }
+
+    section.recommended .card h5 {
+        font-size: 1em !important;
     }
 }
 
@@ -257,7 +279,7 @@ hr {
     }
 
     div.jumbotron>.container>.row>div h1 {
-        font-size: 1.4em !important;
+        font-size: 1.5em !important;
     }
 
     div.jumbotron>.container>.row>div p {
@@ -321,5 +343,16 @@ hr {
         height: 45px;
         padding: 13px;
         margin-left: 10px;
+    }
+
+    /* icone nelle card */
+
+    div.card-body div.mr-2>svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    section.recommended .card h5 {
+        font-size: 1em !important;
     }
 }
