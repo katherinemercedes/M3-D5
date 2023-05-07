@@ -238,5 +238,60 @@ hr {
         width: 20px !important;
     }
 
+}
 
+@media screen and (max-width:400px) {
+
+
+    div.jumbotron>.container>.row>div h1 {
+        font-size: 1.7em !important;
+    }
+
+    div.jumbotron>.container>.row>div p {
+        font-size: 0.9em !important;
+
+    }
+
+    div.jumbotron>.container>.row>div button {
+        font-size: 0.7em !important;
+        padding: 13px 15px !important;
+    }
+
+    div.card-body {
+        padding: 15px !important;
+    }
+
+    div.card h5 {
+        font-size: 0.8em !important;
+    }
+
+    div.card span {
+        font-size: 0.6em !important;
+    }
+
+    div.price>span,
+    del {
+        font-size: 0.7em !important;
+    }
+
+    div.card svg {
+        width: 10px;
+        margin: 0px !important;
+    }
+
+    .freccia-s {
+        width: 35px !important;
+        height: 35px !important;
+        left: -22px !important;
+        padding: 8px;
+        z-index: 3;
+    }
+
+    .freccia-d {
+        width: 35px !important;
+        height: 35px !important;
+        right: -22px !important;
+        padding: 8px;
+        z-index: 3;
+    }
 }
