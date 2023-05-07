@@ -13,8 +13,11 @@ body {
 /* icon styles */
 
 /* campana notifiche */
-#bell {
-    font-size: 1.3em;
+
+
+
+
+#notification {
     padding: 13px;
     background-color: lightgrey;
     border-radius: 50%;
@@ -30,18 +33,19 @@ section.recommended .stars {
 }
 
 /* icone section one */
-ion-icon.icone {
-    font-size: 1.4em;
+svg.s1-icons {
+    width: 55px;
+    height: 55px;
     background-color: #fceedc;
     border-radius: 50%;
-    padding: 15px;
-    color: #b07200;
+    padding: 16px;
+    margin-right: 15px;
 }
 
 /* bookmarks */
 
 .sv-custom {
-    transition: 0.4s;
+    transition: 0.2s;
 }
 
 /* NAVBAR */
@@ -66,13 +70,13 @@ button.custom-color {
 
 .freccia-s,
 .freccia-d {
-    font-size: 1.5em;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     background-color: white;
     padding: 10px;
     position: absolute;
     border: 1px solid rgb(0 0 0 / 0.1);
-    color: grey;
 }
 
 
